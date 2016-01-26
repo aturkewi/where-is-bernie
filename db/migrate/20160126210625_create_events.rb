@@ -2,6 +2,7 @@ class CreateEvents < ActiveRecord::Migration
   def change
     create_table :events do |t|
       t.string :name
+      t.integer :sanders_id
       t.string :url
       t.datetime :start
       t.text :description
