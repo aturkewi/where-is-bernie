@@ -1,5 +1,5 @@
 class Event < ActiveRecord::Base
-  validate_uniquiness_with :sanders_id
+  validates :sanders_id, uniqueness: true
+  has_one :location
 
-  
 end
